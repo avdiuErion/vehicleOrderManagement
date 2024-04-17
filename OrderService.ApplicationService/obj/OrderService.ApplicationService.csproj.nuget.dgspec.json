@@ -1,31 +1,110 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj": {}
+    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj": {
+    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj",
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj",
         "projectName": "OrderService.ApplicationService",
-        "projectPath": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj",
-        "packagesPath": "C:\\Users\\ErionAvdiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\obj\\",
+        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj",
+        "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ErionAvdiu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaFrameworkAndServices/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaProductAndServices%40Local/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.Domain\\OrderService.Domain.csproj": {
+                "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.Domain\\OrderService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "MediatR.Contracts": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.Domain\\OrderService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.Domain\\OrderService.Domain.csproj",
+        "projectName": "OrderService.Domain",
+        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.Domain\\OrderService.Domain.csproj",
+        "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaFrameworkAndServices/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaProductAndServices%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj": {
+                "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -53,7 +132,86 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\ErionAvdiu\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj",
+        "projectName": "SharedCore",
+        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj",
+        "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaFrameworkAndServices/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaProductAndServices%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-preview.3.24172.4, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.2-dev-00338, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.1-dev-10389, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.1.0-dev-00943, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

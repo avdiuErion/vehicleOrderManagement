@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.6.0": {
         "type": "package",
         "dependencies": {
@@ -80,6 +96,36 @@
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR/12.2.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "[2.0.1, 3.0.0)",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
             "related": ".xml"
           }
         }
@@ -1366,10 +1412,39 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "OrderService.ApplicationService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "MediatR.Contracts": "2.0.1",
+          "OrderService.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OrderService.ApplicationService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OrderService.ApplicationService.dll": {}
+        }
+      },
+      "OrderService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SharedCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OrderService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OrderService.Domain.dll": {}
+        }
+      },
       "SharedCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "MediatR": "12.2.0",
           "Microsoft.EntityFrameworkCore": "9.0.0-preview.3.24172.4",
           "Serilog.AspNetCore": "8.0.2-dev-00338",
           "Serilog.Extensions.Logging": "8.0.1-dev-10389",
@@ -1385,6 +1460,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.6.0": {
       "sha512": "kI4m2NsODPOrxo0OoKjk6B3ADbdovhDQIEmI4039upjjZKRaewVLx/Uz4DfRa/NtnIRZQPUALe1yvdHWAoRt4w==",
       "type": "package",
@@ -1449,6 +1539,36 @@
         "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll",
         "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.xml",
         "pkgicon.png"
+      ]
+    },
+    "MediatR/12.2.0": {
+      "sha512": "8TUFrHapKi6D74PhnSNEguRsH91HNGyP3R4ZQdgDorJgl9Wac5Prh0vA33QfrniAaS6L2xNNhc6vxzg+5AIbwA==",
+      "type": "package",
+      "path": "mediatr/12.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net6.0/MediatR.dll",
+        "lib/net6.0/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "mediatr.12.2.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/2.0.1": {
+      "sha512": "FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "type": "package",
+      "path": "mediatr.contracts/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.2.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.3": {
@@ -3626,6 +3746,16 @@
         "version.txt"
       ]
     },
+    "OrderService.ApplicationService/1.0.0": {
+      "type": "project",
+      "path": "../OrderService.ApplicationService/OrderService.ApplicationService.csproj",
+      "msbuildProject": "../OrderService.ApplicationService/OrderService.ApplicationService.csproj"
+    },
+    "OrderService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../OrderService.Domain/OrderService.Domain.csproj",
+      "msbuildProject": "../OrderService.Domain/OrderService.Domain.csproj"
+    },
     "SharedCore/1.0.0": {
       "type": "project",
       "path": "../SharedCore/SharedCore.csproj",
@@ -3634,42 +3764,51 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AutoMapper >= 13.0.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.3",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 8.0.3",
       "Microsoft.AspNetCore.OpenApi >= 8.0.3",
       "Microsoft.Identity.Web >= 2.15.2",
       "Microsoft.Identity.Web.DownstreamApi >= 2.15.2",
+      "OrderService.ApplicationService >= 1.0.0",
       "SharedCore >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ErionAvdiu\\.nuget\\packages\\": {}
+    "C:\\Users\\Erion-avdiu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\OrderService.WebAPI\\OrderService.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.WebAPI\\OrderService.WebAPI.csproj",
       "projectName": "OrderService.WebAPI",
-      "projectPath": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\OrderService.WebAPI\\OrderService.WebAPI.csproj",
-      "packagesPath": "C:\\Users\\ErionAvdiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\OrderService.WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.WebAPI\\OrderService.WebAPI.csproj",
+      "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ErionAvdiu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaFrameworkAndServices/nuget/v3/index.json": {},
+        "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaProductAndServices%40Local/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj": {
-              "projectPath": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj"
+            "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj": {
+              "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.ApplicationService\\OrderService.ApplicationService.csproj"
+            },
+            "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj": {
+              "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj"
             }
           }
         }
@@ -3684,6 +3823,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[8.0.3, )",
@@ -3734,7 +3877,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\ErionAvdiu\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

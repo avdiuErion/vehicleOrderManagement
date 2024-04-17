@@ -1,26 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj": {}
+    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj": {
+    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj",
         "projectName": "InventoryService.WebAPI",
-        "projectPath": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\ErionAvdiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ErionAvdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ErionAvdiu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaFrameworkAndServices/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/NetaSaasPoc/_packaging/NetaProductAndServices%40Local/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -88,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\ErionAvdiu\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -22,8 +22,6 @@ public class ExceptionMiddleware(RequestDelegate next)
 
     private static async Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
-        // Log the exception (You can use ILogger here)
-
         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
         context.Response.ContentType = "application/json";
 

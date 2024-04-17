@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\OrderService.ApplicationService\OrderService.ApplicationService.csproj" />
       <ProjectReference Include="..\SharedCore\SharedCore.csproj" />
     </ItemGroup>
 
