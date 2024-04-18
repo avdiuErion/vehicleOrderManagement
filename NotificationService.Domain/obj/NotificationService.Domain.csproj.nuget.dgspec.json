@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj": {}
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj": {
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj",
         "projectName": "NotificationService.Domain",
-        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj",
+        "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj",
         "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -30,8 +30,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj": {
-                "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj"
+              "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj": {
+                "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj": {
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj",
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj",
         "projectName": "SharedCore",
-        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj",
+        "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\SharedCore\\SharedCore.csproj",
         "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\SharedCore\\obj\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\SharedCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,6 +110,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0-preview.3.24172.4, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.1-alpha.0.20, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",

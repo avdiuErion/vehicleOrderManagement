@@ -77,11 +77,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionPacksService.DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseService.ApplicationService", "WarehouseService.ApplicationService\WarehouseService.ApplicationService.csproj", "{75CC6481-D271-45C6-B40A-212743C5BD92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.Domain", "Warehouse.Domain\Warehouse.Domain.csproj", "{12600781-7EC6-4091-8E43-0B89A0BD1BC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseService.Domain", "WarehouseService.Domain\WarehouseService.Domain.csproj", "{12600781-7EC6-4091-8E43-0B89A0BD1BC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.DataAccess", "Warehouse.DataAccess\Warehouse.DataAccess.csproj", "{550AE9C8-2A99-47B1-B4FF-A6EA71039B44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseService.DataAccess", "WarehouseService.DataAccess\WarehouseService.DataAccess.csproj", "{550AE9C8-2A99-47B1-B4FF-A6EA71039B44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.WebAPI", "Warehouse.WebAPI\Warehouse.WebAPI.csproj", "{1956D698-6CB1-48B2-9477-0D9C11AAD5B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseService.WebAPI", "WarehouseService.WebAPI\WarehouseService.WebAPI.csproj", "{1956D698-6CB1-48B2-9477-0D9C11AAD5B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

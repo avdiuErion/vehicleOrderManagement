@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NadsfIPBC+RN2CEPL5kBOcAXXM/EQxTfa+BOjZlXi1HLDKcZiiwHGYhPry5jnGWURfUP3U9kt+jncpgFlvJtWw==",
+  "dgSpecHash": "l58L9h8T5mT/XuGa3wbxFFs6EdcYAnYGFK4iCxrYYLUwNc5WTszMg0NFIWBEeXDMqEWS160KCKa2cWza0zphLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.WebAPI\\OrderService.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\OrderService.WebAPI\\OrderService.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
@@ -59,6 +59,7 @@
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.4\\microsoft.netcore.platforms.3.1.4.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Erion-avdiu\\.nuget\\packages\\restsharp\\110.2.1-alpha.0.20\\restsharp.110.2.1-alpha.0.20.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\serilog.aspnetcore\\8.0.2-dev-00338\\serilog.aspnetcore.8.0.2-dev-00338.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\serilog.extensions.hosting\\8.0.0\\serilog.extensions.hosting.8.0.0.nupkg.sha512",

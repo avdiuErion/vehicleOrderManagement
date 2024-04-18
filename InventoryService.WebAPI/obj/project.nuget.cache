@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tlinz+fjHlbJXCWiiUn2GN1Jtu3oJmHdqkxzK1QfWNY+up3IcXNKM+wUGDCox6ev4HQ2cnOo2SHj0yKaEC6R0Q==",
+  "dgSpecHash": "eEnLTmZiis6DbKgdyiysdW2DCbO0U/9rp+FRH0cUv+Eu3J/TKKTeI8sDkeRZdPd3BOdM/XXwplZYlNRKQCWo2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.WebAPI\\InventoryService.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dG1t/eLcS9iXJshxiZvyXCAf3z5+ajQvln2eqQPXI/53TPL7aZ1GhEn/L83+QtPeBN+i8BWDe5tBoIPryiWaGg==",
+  "dgSpecHash": "gihM6peNLGe3svL7puyOjHDchHmlevC5f51ZAKkykZyOB4hAVb+mEhORepYy7gilqJiM0YQYQ9A3XNkCrft8nA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.Domain\\NotificationService.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
@@ -23,6 +23,7 @@
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0-preview.3.24172.9\\microsoft.extensions.logging.abstractions.9.0.0-preview.3.24172.9.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-preview.3.24172.9\\microsoft.extensions.options.9.0.0-preview.3.24172.9.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.3.24172.9\\microsoft.extensions.primitives.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\Erion-avdiu\\.nuget\\packages\\restsharp\\110.2.1-alpha.0.20\\restsharp.110.2.1-alpha.0.20.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\serilog.aspnetcore\\8.0.2-dev-00338\\serilog.aspnetcore.8.0.2-dev-00338.nupkg.sha512",
     "C:\\Users\\Erion-avdiu\\.nuget\\packages\\serilog.extensions.hosting\\8.0.0\\serilog.extensions.hosting.8.0.0.nupkg.sha512",
