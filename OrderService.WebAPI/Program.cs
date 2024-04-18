@@ -1,14 +1,12 @@
-using System.Reflection;
 using OrderService.ApplicationService.Mapping;
 using SharedCore.Configuration;
-using SharedCore.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 builder.Services.AddAutoMapper(typeof(OrderMappingProfile));
+builder.Services.AddBaseServices();
 
 SerilogConfiguration.ConfigureSerilog();
 
@@ -21,5 +19,4 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseMiddleware<RequestCorrelationMiddleware>();
-app.UseMiddleware<ExceptionMiddleware>();
+app.AddSharedConfiguration();

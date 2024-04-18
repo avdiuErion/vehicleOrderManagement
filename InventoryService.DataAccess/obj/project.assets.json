@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.DataAccess\\InventoryService.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.DataAccess\\InventoryService.DataAccess.csproj",
       "projectName": "InventoryService.DataAccess",
-      "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.DataAccess\\InventoryService.DataAccess.csproj",
+      "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.DataAccess\\InventoryService.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",

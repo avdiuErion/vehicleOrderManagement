@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VmDyy5cXRdZduZtE08dsANKWptYnAp2nh1EGscToxBoPrumD5cSdBlo2l0OxdOeTwauPi0vKQZ7Hk7wfxID73A==",
+  "dgSpecHash": "HBN2JgEYt1k7dl4xriQhx2m8CF/k0vRz3+frktYSY/Sf/h0SzTaV9cHZViCWTrQ+9SyvUQ9mXNKO3p3P5s5+Ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.DataAccess\\InventoryService.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.DataAccess\\InventoryService.DataAccess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.DataAccess\\AssemblyService.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.DataAccess\\AssemblyService.DataAccess.csproj",
       "projectName": "AssemblyService.DataAccess",
-      "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.DataAccess\\AssemblyService.DataAccess.csproj",
+      "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.DataAccess\\AssemblyService.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0UBd0nYHWmrIiCk9VsBPpJtmTo48B2dMcxuEbTV/rWmonet6jIkCU/9TaIGNiFa0p38h4mqfxz5cgyNeNKCLKA==",
+  "dgSpecHash": "WXLtyOI/IVUNFt8aJblRNKUD9zAFS0BnJumRavUvdGs01VwxJFGm0dI7LokbORnjJ8dJ9ET9apikPHSNrH0Qww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

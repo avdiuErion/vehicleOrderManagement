@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj": {}
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj": {
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj",
         "projectName": "NotificationService.DataAccess",
-        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.DataAccess\\NotificationService.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",

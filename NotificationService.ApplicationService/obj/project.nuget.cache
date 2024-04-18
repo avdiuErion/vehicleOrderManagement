@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wnoL5PWqqJoX01H7Syiis6ymVT11/yXLygktxB8OA2GNLfm2TGc0GzwS/aTfzbre0R/9Dsq+HPIOFP71qc4myA==",
+  "dgSpecHash": "pc8K1Sdzzv9lR2Bw5w8MIDSWzThEzansHHrKrXq0CW/gMGh8Q5W959KB1sGQVTSHfU/WF+08puujexfunMCEAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\NotificationService.ApplicationService\\NotificationService.ApplicationService.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\NotificationService.ApplicationService\\NotificationService.ApplicationService.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

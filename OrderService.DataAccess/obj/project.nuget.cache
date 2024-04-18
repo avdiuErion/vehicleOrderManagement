@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PkOrMjZ5C/AaSwpCRZQjN+S5l/U9SD7hiUq9fNZMCsGmmFwt9Hvx0/fexOVTnwtjRlxmD16gSRmW0FqIkO1Iww==",
+  "dgSpecHash": "Aif1t/yC/SG0P+TwKbWFRM25KayQxjdPXH2X5QVFXvoj6YPu9YtJXyblYWZHkCBffD7aYbQY+zpgjyBc95qdWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

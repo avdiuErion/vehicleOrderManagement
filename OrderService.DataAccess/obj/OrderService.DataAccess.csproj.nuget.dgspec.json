@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj": {}
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj": {
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj",
         "projectName": "OrderService.DataAccess",
-        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\OrderService.DataAccess\\OrderService.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\OrderService.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\OrderService.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",

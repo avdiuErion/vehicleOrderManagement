@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "er3DkLwolMemhVka/LEQs0/vmeLVmdDoGY2L2rXAsxjCSoyc4tfIsO631sdM+WXBYa8e1vyctr7/SAlx0PoHOw==",
+  "dgSpecHash": "KC8LthfLTLRTvpm8RgTsvNwjpNeqtY7f0E0rHpqIe4iyj11CEipv0J/DEMXY87CdNmLzanX8aGsgpETWatanLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

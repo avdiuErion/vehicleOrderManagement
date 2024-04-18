@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj": {}
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj": {
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj",
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj",
         "projectName": "InventoryService.ApplicationService",
-        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj",
+        "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.ApplicationService\\InventoryService.ApplicationService.csproj",
         "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\InventoryService.ApplicationService\\obj\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\InventoryService.ApplicationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",

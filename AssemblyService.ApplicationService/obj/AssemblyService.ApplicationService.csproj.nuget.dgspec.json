@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj": {}
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj": {
+    "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj",
+        "projectUniqueName": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj",
         "projectName": "AssemblyService.ApplicationService",
-        "projectPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj",
+        "projectPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj",
         "packagesPath": "C:\\Users\\Erion-avdiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.ApplicationService\\obj\\",
+        "outputPath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.ApplicationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Erion-avdiu\\AppData\\Roaming\\NuGet\\NuGet.Config",

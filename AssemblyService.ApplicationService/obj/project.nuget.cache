@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9lSHTgHkSTZnLkZ2odn+rVXF/NKYCBt5CShRLfaCXlwFqD4e80gaxWe2722vrpaVPOOOfTHC92yMMiNFZR8Jcw==",
+  "dgSpecHash": "wjayv8wI1nx+hvgn/G+G+ZZInamUYjfgR8n/UCNpyVwQujgi8tT3UQrEKskzQ7fRAO1e2ksrGl9abKRAlhmSjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erion-avdiu\\Desktop\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj",
+  "projectFilePath": "C:\\Users\\Erion-avdiu\\source\\repos\\vehicleOrderManagement\\AssemblyService.ApplicationService\\AssemblyService.ApplicationService.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
