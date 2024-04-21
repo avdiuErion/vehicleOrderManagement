@@ -1,21 +1,26 @@
+using Microsoft.Extensions.Logging;
 using RestSharp;
 using SharedCore.Extensions;
 
 namespace SharedCore.Clients;
 
-public abstract class BaseApiClient(string baseUrl)
+public abstract class BaseApiClient(ILogger<BaseApiClient> logger, string baseUrl)
 {
-    protected async Task<T?> SendRequest<T>(string endpoint, string body, Method method, ICollection<KeyValuePair<string, string>>? headers = null)
+    protected async Task<T?> SendRequest<T>(string endpoint,  Method method, string? body = null, ICollection<KeyValuePair<string, string>>? headers = null)
     {
         var client = new RestClient(baseUrl);
         var request = new RestRequest(endpoint, method);
 
         if (headers != null)
             request.AddHeaders(headers);
+        if (body != null)
+            request.AddJsonBody(body);
         
-        request.AddJsonBody(body);
+        logger.LogInformation("Sending request to endpoint: {endpoint}", endpoint);
 
         RestResponse responseMessage = await client.ExecuteAsync(request);
+        
+        logger.LogInformation("Parsing http response: {responseMessage}", responseMessage);
 
         return await HandleResponse<T>(responseMessage);
     }

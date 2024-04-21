@@ -5,44 +5,53 @@ using SharedCore.Interfaces;
 
 namespace SharedCore.Implementations;
 
-public class BaseRepository<TEntity>(DbContext context, DbSet<TEntity> entities) : IBaseRepository<TEntity>
+public class BaseRepository<TEntity> : IBaseRepository<TEntity>
     where TEntity : BaseEntity
 {
+    private readonly DbContext _context;
+    private readonly DbSet<TEntity> _dbSet;
+
+    protected BaseRepository(DbContext context)
+    {
+        _context = context;
+        _dbSet = context.Set<TEntity>();
+    }
+    
     public async Task<TEntity> GetByIdAsync(Guid id)
     {
-        return await entities.FindAsync(id);
+        return await _dbSet.FindAsync(id);
     }
 
     public async Task<TEntity> FirstOrDefaultAsync(Expression<Func<TEntity?, bool>> predicate)
     {
-        return await entities.FirstOrDefaultAsync(predicate);
+        return await _dbSet.FirstOrDefaultAsync(predicate);
     }
 
     public IQueryable<TEntity?> GetAll()
     {
-        return entities.AsQueryable();
+        return _dbSet.AsQueryable();
     }
 
     public IQueryable<TEntity?> Where(Expression<Func<TEntity?, bool>> predicate)
     {
-        return entities.Where(predicate);
+        return _dbSet.Where(predicate);
     }
 
     public async Task AddAsync(TEntity? entity)
     {
-        await entities.AddAsync(entity);
-        await context.SaveChangesAsync();
+        await _dbSet.AddAsync(entity);
+        await _context.SaveChangesAsync();
     }
 
     public async Task UpdateAsync(TEntity? entity)
     {
-        entities.Update(entity);
-        await context.SaveChangesAsync();
+        _dbSet.Update(entity);
+        await _context.SaveChangesAsync();
     }
 
     public async Task RemoveAsync(TEntity? entity)
     {
-        entities.Remove(entity);
-        await context.SaveChangesAsync();
+        _dbSet.Remove(entity);
+        await _context.SaveChangesAsync();
     }
 }

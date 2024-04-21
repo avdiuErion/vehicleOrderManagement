@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Text.Json;
 
 namespace SharedCore.Extensions;
@@ -12,7 +13,7 @@ public static class StringExtensions
             ReadCommentHandling = JsonCommentHandling.Skip
         };
         
-        if (input is null)
+        if (input is null || input.Trim() == "[]")
             return default;
 
         T? deserialized = JsonSerializer.Deserialize<T>(input!, options);

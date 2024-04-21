@@ -1,17 +1,18 @@
-using System.ComponentModel.DataAnnotations;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SharedCore.BaseClasses;
-using CheckInventoryQuery = WarehouseService.ApplicationService.CQRS.Queries.CheckInventoryQuery;
+using GetAllStockItemsQuery = WarehouseService.ApplicationService.CQRS.Queries.GetAllStockItemsQuery;
 
 namespace Warehouse.WebAPI.Controllers;
 
+[ApiController]
+[Route("[controller]")]
 public class WarehouseController(IMediator mediator) : BaseController(mediator)
 {
-    [HttpPost("CheckForInventory")]
-    public async Task<ActionResult<CheckInventoryQuery.QueryResponse>> CheckForInventory([FromBody] CheckInventoryQuery.Query query)
+    [HttpGet("GetAll")]
+    public async Task<ActionResult<List<GetAllStockItemsQuery.QueryResponse>>> GetAll()
     {
-        CheckInventoryQuery.QueryResponse response = await mediator.Send(query);
+        List<GetAllStockItemsQuery.QueryResponse> response = await Mediator.Send(new GetAllStockItemsQuery.Query());
 
         return Ok(response);
     }

@@ -1,18 +1,19 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SharedCore.BaseClasses;
-using AddOrderCommand = OrderService.ApplicationService.CQRS.Commands.AddOrderCommand.Command;
+using AddOrderCommand = OrderService.ApplicationService.CQRS.Commands.AddOrderCommand;
 
 namespace OrderService.WebAPI.Controllers;
 
+[ApiController]
+[Route("[controller]")]
 public class OrderController(IMediator mediator) : BaseController(mediator)
 {
     [HttpPost("PlaceOrder")]
-    public async Task<ActionResult> PaginateCommunityDocuments()
+    public async Task<ActionResult<AddOrderCommand.CommandResponse>> PaginateCommunityDocuments([FromBody] AddOrderCommand.Command command)
     {
-        await Mediator.Send(new AddOrderCommand());
+        AddOrderCommand.CommandResponse response = await Mediator.Send(command);
 
-        return Ok();
-
+        return Ok(response);
     }
 }

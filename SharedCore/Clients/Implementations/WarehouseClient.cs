@@ -1,16 +1,18 @@
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using RestSharp;
 using SharedCore.Clients.Interfaces;
 using SharedCore.Dtos;
 
 namespace SharedCore.Clients.Implementations;
 
-public class WarehouseClient(string baseUrl) : BaseApiClient(baseUrl), IWarehouseClient
+public class WarehouseClient(IConfiguration configuration, ILogger<WarehouseClient> logger)
+    : BaseApiClient(logger, configuration["WarehouseBaseUrl"]), IWarehouseClient
 {
-    public async Task<InventoryResponseDto?> CheckForInventory(object inventory)
+    public async Task<InventoryResponseDto?> GetStockItems()
     {
-        var endpoint = "CheckForInventory";
-        var body = inventory.ToString();
-
-        return await SendRequest<InventoryResponseDto>(endpoint, body!, Method.Post);
+        string endpoint = "Warehouse/GetAll";
+        
+        return await SendRequest<InventoryResponseDto>(endpoint, Method.Get);
     }
 }

@@ -7,4 +7,8 @@
         <RootNamespace>Warehouse.Domain</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SharedCore\SharedCore.csproj" />
+    </ItemGroup>
+
 </Project>
