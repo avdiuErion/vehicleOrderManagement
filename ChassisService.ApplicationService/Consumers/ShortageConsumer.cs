@@ -2,7 +2,6 @@ using ChassisService.Domain.Entities;
 using ChassissService.DataAccess.Interfaces;
 using MassTransit;
 using SharedCore.Enums;
-using SharedCore.Events;
 using SharedCore.Events.Chassis;
 using SharedCore.Events.Order;
 using SharedCore.Interfaces;
