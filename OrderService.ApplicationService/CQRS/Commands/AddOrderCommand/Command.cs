@@ -1,10 +1,11 @@
 using MediatR;
 using OrderService.Domain;
+using OrderService.Domain.Entities;
 
 namespace OrderService.ApplicationService.CQRS.Commands.AddOrderCommand;
 
 public class Command : IRequest<CommandResponse>
 {
-    public string CustomerName { get; set; }
-    public List<OrderItem> OrderItems { get; set; }
+    public Guid CustomerId { get; set; }
+    public IEnumerable<OrderItem> OrderItems { get; set; }
 }

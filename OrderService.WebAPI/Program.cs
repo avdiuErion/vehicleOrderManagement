@@ -19,11 +19,10 @@ builder.Services.AddBaseServices(Assembly.GetAssembly(typeof(ApplicationServiceM
 builder.Services.CoreAddDbContext<ApplicationDbContext>();
 builder.Services.AddBaseInfrastructureServices();
 
-builder.Services.AddScoped<IWarehouseClient, WarehouseClient>();
-builder.Services.AddScoped<IMessageService, MessageService>();
-
 builder.Services.ConfigureMassTransit(new MassTransitConfiguration(builder.Configuration),
     Assembly.GetAssembly(typeof(ApplicationServiceMarker))!);
+
+AddServicesAndRepos(builder.Services);
 
 var app = builder.Build();
 
@@ -39,3 +38,13 @@ app.UseHttpsRedirection();
 app.MapControllers();
 
 await app.RunAsync();
+
+#region Repos and Services extension
+
+void AddServicesAndRepos(IServiceCollection services)
+{
+    services.AddScoped<IWarehouseClient, WarehouseClient>();
+    services.AddScoped<IMessageService, MessageService>();
+}
+
+#endregion

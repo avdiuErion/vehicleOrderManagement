@@ -1,67 +1,54 @@
+using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using OrderService.DataAccess.Interfaces;
+using OrderService.Domain;
 using SharedCore.Clients.Interfaces;
 using SharedCore.Dtos;
-using SharedCore.Events;
+using SharedCore.Events.Order;
 using SharedCore.Interfaces;
 
 namespace OrderService.ApplicationService.CQRS.Commands.AddOrderCommand;
 
-public class CommandHandler(ILogger<CommandHandler> logger, IWarehouseClient warehouseClient, IMessageService messageService) : IRequestHandler<Command, CommandResponse>
+public class CommandHandler(
+    ILogger<CommandHandler> logger,
+    IWarehouseClient warehouseClient,
+    IMessageService messageService,
+    IMapper mapper,
+    IOrderRepository orderRepository) : IRequestHandler<Command, CommandResponse>
 {
     public async Task<CommandResponse> Handle(Command request, CancellationToken cancellationToken)
     {
         try
         {
-            InventoryResponseDto? responseDto = await warehouseClient.GetStockItems();
-            var shortageItems = new List<ShortageItem>();
-
-            if (responseDto != null && responseDto!.StockItems!.Any())
-            {
-                foreach (var orderItem in request.OrderItems)
-                {
-                    var stockItem = responseDto!.StockItems!.FirstOrDefault(item => item.ProductId == orderItem.ProductId.ToString());
-                    if (stockItem != null && stockItem.AvailableQuantity >= orderItem.Quantity) continue;
-                
-                    // Shortage detected for this order item
-                    logger.LogInformation("Shortage detected for product ID: {ProductId}", orderItem.ProductId);
+            Guid orderId = Guid.NewGuid();
+            List<ShortageItem> shortageItems = new List<ShortageItem>();
             
-                    shortageItems.Add(new ShortageItem()
-                    {
-                        ProductId = orderItem.ProductId,
-                        RequiredQuantity = orderItem.Quantity - stockItem!.AvailableQuantity
-                    });
-                }
+            logger.LogInformation("Checking existing inventory in Warehouse for Order {ID}", orderId);
+
+            InventoryResponseDto? responseDto = await warehouseClient.GetStockItems();
+
+            if (responseDto != null && responseDto.StockItems!.Any())
+            {
+                shortageItems = GetShortageItems(request.OrderItems, responseDto);
             }
 
             if (!shortageItems.Any())
             {
-                var shortageEvent = new ShortageEvent
-                {
-                    ShortageItems = shortageItems
-                };
-
-                await messageService.PublishEvent(shortageEvent);
+                logger.LogInformation("Publishing {AssembleVehicleEvent} for Order {ID}", typeof(AssembleVehicleEvent),
+                    orderId);
+                await PublishAssembleVehicleEvent(orderId, request.OrderItems);
             }
             else
             {
-                // Publish ShortageEvent
-                var shortageEvent = new ShortageEvent
-                {
-                    ShortageItems = shortageItems
-                };
-
-                await messageService.PublishEvent(shortageEvent);
+                logger.LogInformation("Publishing {ShortageEvent} for Order {ID}", typeof(ShortageEvent),
+                    orderId);
+                await PublishShortageEvent(shortageItems);
             }
-            //If any missing, schedule for production
-                //Send message to specific service
-                    //Specific service produces component, informs assemblyservice/customer
-                        //AssemblyService assembles vehicle, sends to warehouse
-                            //Warehouse informs customer
-            //If all available, assemble vehicle
-                //AssemblyService assembles vehicle, sends to warehouse
-                    //Warehouse informs customer
-                    
+
+            logger.LogInformation("Adding order in storage. Order: {order}", request);
+            await AddOrder(orderId, request);
+
             return new CommandResponse()
             {
                 OrderId = Guid.NewGuid()
@@ -73,4 +60,62 @@ public class CommandHandler(ILogger<CommandHandler> logger, IWarehouseClient war
             throw;
         }
     }
+
+
+    #region Private methods
+
+    private List<ShortageItem> GetShortageItems(IEnumerable<Domain.Entities.OrderItem> requestOrderItems,
+        InventoryResponseDto responseDto)
+    {
+        var shortageItems = new List<ShortageItem>();
+
+        foreach (var orderItem in requestOrderItems)
+        {
+            var stockItem =
+                responseDto.StockItems!.FirstOrDefault(item => item.ProductId == orderItem.ProductId.ToString());
+            if (stockItem != null && stockItem.AvailableQuantity >= orderItem.Quantity) continue;
+
+            logger.LogInformation("Shortage detected for product ID: {ProductId}", orderItem.ProductId);
+
+            shortageItems.Add(new ShortageItem()
+            {
+                ProductId = orderItem.ProductId,
+                RequiredQuantity = orderItem.Quantity - stockItem!.AvailableQuantity
+            });
+        }
+
+        return shortageItems;
+    }
+
+    private async Task PublishAssembleVehicleEvent(Guid orderId,
+        IEnumerable<Domain.Entities.OrderItem> requestOrderItems)
+    {
+        var assembleVehicleEvent = new AssembleVehicleEvent()
+        {
+            OrderId = orderId,
+            OrderItems = mapper.Map<IEnumerable<OrderItem>>(requestOrderItems)
+        };
+
+        await messageService.PublishEvent(assembleVehicleEvent);
+    }
+
+    private async Task PublishShortageEvent(List<ShortageItem> shortageItems)
+    {
+        var shortageEvent = new ShortageEvent
+        {
+            ShortageItems = shortageItems
+        };
+
+        await messageService.PublishEvent(shortageEvent);
+    }
+
+    private async Task AddOrder(Guid orderId, Command request)
+    {
+        Order orderToAdd = mapper.Map<Order>(request);
+        orderToAdd.Id = orderId;
+
+        await orderRepository.AddAsync(orderToAdd);
+    }
+
+    #endregion
 }

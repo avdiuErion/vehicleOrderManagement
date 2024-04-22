@@ -7,4 +7,12 @@
         <RootNamespace>NotificatioService.ApplicationService</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MassTransit.Abstractions" Version="8.2.2-develop.1775" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SharedCore\SharedCore.csproj" />
+    </ItemGroup>
+
 </Project>

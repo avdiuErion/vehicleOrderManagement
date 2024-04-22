@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>ChassissService.DataAccess</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ChassisService.Domain\ChassisService.Domain.csproj" />
+      <ProjectReference Include="..\SharedCore\SharedCore.csproj" />
+    </ItemGroup>
+
+</Project>
