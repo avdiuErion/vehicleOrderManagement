@@ -7,17 +7,21 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Warehouse.WebAPI/Warehouse.WebAPI.csproj", "Warehouse.WebAPI/"]
-RUN dotnet restore "Warehouse.WebAPI/Warehouse.WebAPI.csproj"
+COPY ["WarehouseService.WebAPI/WarehouseService.WebAPI.csproj", "WarehouseService.WebAPI/"]
+COPY ["SharedCore/SharedCore.csproj", "SharedCore/"]
+COPY ["WarehouseService.ApplicationService/WarehouseService.ApplicationService.csproj", "WarehouseService.ApplicationService/"]
+COPY ["WarehouseService.Domain/WarehouseService.Domain.csproj", "WarehouseService.Domain/"]
+COPY ["WarehouseService.DataAccess/WarehouseService.DataAccess.csproj", "WarehouseService.DataAccess/"]
+RUN dotnet restore "WarehouseService.WebAPI/WarehouseService.WebAPI.csproj"
 COPY . .
-WORKDIR "/src/Warehouse.WebAPI"
-RUN dotnet build "Warehouse.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/WarehouseService.WebAPI"
+RUN dotnet build "WarehouseService.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "Warehouse.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "WarehouseService.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Warehouse.WebAPI.dll"]
+ENTRYPOINT ["dotnet", "WarehouseService.WebAPI.dll"]

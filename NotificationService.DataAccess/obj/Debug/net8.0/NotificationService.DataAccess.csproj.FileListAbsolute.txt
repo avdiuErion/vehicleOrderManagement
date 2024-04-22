@@ -1,0 +1,12 @@
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\bin\Debug\net8.0\NotificationService.DataAccess.deps.json
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\bin\Debug\net8.0\NotificationService.DataAccess.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\bin\Debug\net8.0\NotificationService.DataAccess.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\NotificationService.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\NotificationService.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\NotificationService.DataAccess.AssemblyInfo.cs
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\NotificationService.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\NotificationService.DataAccess.sourcelink.json
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\NotificationService.DataAccess.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\refint\NotificationService.DataAccess.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\NotificationService.DataAccess.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\NotificationService.DataAccess\obj\Debug\net8.0\ref\NotificationService.DataAccess.dll

@@ -1,4 +1,5 @@
 using AutoMapper;
+using SharedCore.Events.Order;
 using Warehouse.Domain.Entities;
 using WarehouseService.ApplicationService.CQRS.Queries.GetAllStockItemsQuery;
 
@@ -9,5 +10,6 @@ public class WarehouseMappingProfile : Profile
     public WarehouseMappingProfile()
     {
         CreateMap<InventoryItem, QueryResponse>();
+        CreateMap<OrderItem, InventoryItem>();
     }
 }

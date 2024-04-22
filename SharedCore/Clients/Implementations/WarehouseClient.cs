@@ -9,10 +9,10 @@ namespace SharedCore.Clients.Implementations;
 public class WarehouseClient(IConfiguration configuration, ILogger<WarehouseClient> logger)
     : BaseApiClient(logger, configuration["WarehouseBaseUrl"]), IWarehouseClient
 {
-    public async Task<InventoryResponseDto?> GetStockItems()
+    public async Task<List<StockItemDto>?> GetStockItems()
     {
         string endpoint = "Warehouse/GetAll";
         
-        return await SendRequest<InventoryResponseDto>(endpoint, Method.Get);
+        return await SendRequest<List<StockItemDto>>(endpoint, Method.Get);
     }
 }

@@ -8,6 +8,10 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["OrderService.WebAPI/OrderService.WebAPI.csproj", "OrderService.WebAPI/"]
+COPY ["OrderService.ApplicationService/OrderService.ApplicationService.csproj", "OrderService.ApplicationService/"]
+COPY ["OrderService.Domain/OrderService.Domain.csproj", "OrderService.Domain/"]
+COPY ["SharedCore/SharedCore.csproj", "SharedCore/"]
+COPY ["OrderService.DataAccess/OrderService.DataAccess.csproj", "OrderService.DataAccess/"]
 RUN dotnet restore "OrderService.WebAPI/OrderService.WebAPI.csproj"
 COPY . .
 WORKDIR "/src/OrderService.WebAPI"

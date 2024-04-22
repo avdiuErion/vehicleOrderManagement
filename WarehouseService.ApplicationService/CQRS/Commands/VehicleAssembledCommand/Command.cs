@@ -4,5 +4,5 @@ namespace WarehouseService.ApplicationService.CQRS.Commands.VehicleAssembledComm
 
 public class Command : IRequest<CommandResponse>
 {
-    
+    public Guid VehicleId { get; set; }
 }

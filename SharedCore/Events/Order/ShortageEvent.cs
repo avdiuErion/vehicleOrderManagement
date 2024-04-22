@@ -12,5 +12,5 @@ public class ShortageItem
 {
     public Guid ProductId { get; set; }
     public int RequiredQuantity { get; set; }
-    public ProductType Type { get; set; }
+    public ProductType? Type { get; set; }
 }

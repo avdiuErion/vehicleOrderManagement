@@ -1,4 +1,4 @@
-using ChassisService.Domain.Entitites;
+using ChassisService.Domain.Entities;
 using SharedCore.Interfaces;
 
 namespace ChassissService.DataAccess.Interfaces;

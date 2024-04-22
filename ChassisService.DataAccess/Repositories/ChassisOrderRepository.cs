@@ -1,5 +1,5 @@
 using ChassisService.Domain.Context;
-using ChassisService.Domain.Entitites;
+using ChassisService.Domain.Entities;
 using ChassissService.DataAccess.Interfaces;
 using SharedCore.Implementations;
 

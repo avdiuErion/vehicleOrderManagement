@@ -4,5 +4,5 @@ namespace SharedCore.Clients.Interfaces;
 
 public interface IWarehouseClient
 {
-    Task<InventoryResponseDto?> GetStockItems();
+    Task<List<StockItemDto>?> GetStockItems();
 }

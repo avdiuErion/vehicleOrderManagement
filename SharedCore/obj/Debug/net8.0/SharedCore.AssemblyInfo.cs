@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharedCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8293632577115d8cfb765c5984eae984d213924")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc909bd5be71921885b6eb2ab83e924c0b8e6960")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharedCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharedCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

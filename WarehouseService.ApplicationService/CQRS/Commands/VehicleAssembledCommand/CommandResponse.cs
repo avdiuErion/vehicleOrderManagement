@@ -2,5 +2,5 @@ namespace WarehouseService.ApplicationService.CQRS.Commands.VehicleAssembledComm
 
 public class CommandResponse
 {
-    
+    public bool Success { get; set; }
 }

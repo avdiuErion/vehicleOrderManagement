@@ -4,7 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
         <RootNamespace>Warehouse.WebAPI</RootNamespace>
     </PropertyGroup>
 
@@ -14,14 +14,21 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\SharedCore\SharedCore.csproj" />
+      <ProjectReference Include="..\WarehouseService.ApplicationService\WarehouseService.ApplicationService.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SharedCore\SharedCore.csproj" />
-      <ProjectReference Include="..\WarehouseService.ApplicationService\WarehouseService.ApplicationService.csproj" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0-preview.3.24172.4">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
 </Project>

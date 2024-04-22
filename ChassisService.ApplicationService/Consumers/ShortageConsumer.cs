@@ -1,4 +1,4 @@
-using ChassisService.Domain.Entitites;
+using ChassisService.Domain.Entities;
 using ChassissService.DataAccess.Interfaces;
 using MassTransit;
 using SharedCore.Enums;

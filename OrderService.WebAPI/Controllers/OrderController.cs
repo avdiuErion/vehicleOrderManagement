@@ -10,7 +10,7 @@ namespace OrderService.WebAPI.Controllers;
 public class OrderController(IMediator mediator) : BaseController(mediator)
 {
     [HttpPost("PlaceOrder")]
-    public async Task<ActionResult<AddOrderCommand.CommandResponse>> PaginateCommunityDocuments([FromBody] AddOrderCommand.Command command)
+    public async Task<ActionResult<AddOrderCommand.CommandResponse>> PlaceOrder([FromBody] AddOrderCommand.Command command)
     {
         AddOrderCommand.CommandResponse response = await Mediator.Send(command);
 

@@ -1,6 +1,79 @@
-﻿services:
+﻿networks:
+  internal_network:
+    driver: bridge
+
+services:
   orderservice.webapi:
     image: orderservice.webapi
     build:
       context: .
       dockerfile: OrderService.WebAPI/Dockerfile
+    depends_on:
+      - rabbitmq
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+    networks:
+      - internal_network
+    
+  optionspackservice.webapi:
+    image: optionspackservice.webapi
+    build:
+      context: .
+      dockerfile: OptionPacksService.WebAPI/Dockerfile
+    depends_on:
+      - rabbitmq
+    networks:
+      - internal_network
+    
+  notificationservice.webapi:
+    image: notificationservice.webapi
+    build:
+      context: .
+      dockerfile: NotificationService.WebAPI/Dockerfile
+    depends_on:
+      - rabbitmq
+    networks:
+      - internal_network
+    
+  engineservice.webapi:
+    image: engineservice.webapi
+    build:
+      context: .
+      dockerfile: EngineService.WebAPI/Dockerfile
+    depends_on:
+      - rabbitmq
+    networks:
+      - internal_network
+    
+  chassisservice.webapi:
+    image: chassisservice.webapi
+    build:
+      context: .
+      dockerfile: ChassisService.WebAPI/Dockerfile
+    depends_on:
+      - rabbitmq
+    networks:
+      - internal_network
+    
+  warehouseservice.webapi:
+    image: warehouseservice.webapi
+    build:
+      context: .
+      dockerfile: WarehouseService.WebAPI/Dockerfile
+    links:
+      - rabbitmq
+    networks:
+      - internal_network
+      
+      
+  rabbitmq:
+    image: rabbitmq:management
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"  # RabbitMQ default port
+      - "15672:15672"  # RabbitMQ management console port
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest  # RabbitMQ default username
+      - RABBITMQ_DEFAULT_PASS=guest  # RabbitMQ default password
+    networks:
+      - internal_network

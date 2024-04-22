@@ -1,5 +1,5 @@
 using AutoMapper;
-using ChassisService.Domain.Entitites;
+using ChassisService.Domain.Entities;
 using GetAllQueryResponse = ChassisService.ApplicationService.CQRS.Queries.GetAll.QueryResponse;
 
 namespace ChassisService.ApplicationService.Mappings;

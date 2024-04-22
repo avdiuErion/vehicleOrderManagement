@@ -1,5 +1,7 @@
 using System.Reflection;
 using OrderService.ApplicationService.Mapping;
+using OrderService.DataAccess.Implementations;
+using OrderService.DataAccess.Interfaces;
 using OrderService.Domain.Context;
 using SharedCore.Clients.Implementations;
 using SharedCore.Clients.Interfaces;
@@ -22,7 +24,7 @@ builder.Services.AddBaseInfrastructureServices();
 builder.Services.ConfigureMassTransit(new MassTransitConfiguration(builder.Configuration),
     Assembly.GetAssembly(typeof(ApplicationServiceMarker))!);
 
-AddServicesAndRepos(builder.Services);
+AddDependencies(builder.Services);
 
 var app = builder.Build();
 
@@ -39,12 +41,13 @@ app.MapControllers();
 
 await app.RunAsync();
 
-#region Repos and Services extension
+#region Dependencies
 
-void AddServicesAndRepos(IServiceCollection services)
+void AddDependencies(IServiceCollection services)
 {
     services.AddScoped<IWarehouseClient, WarehouseClient>();
     services.AddScoped<IMessageService, MessageService>();
+    services.AddScoped<IOrderRepository, OrderRepository>();
 }
 
 #endregion

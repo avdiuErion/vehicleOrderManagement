@@ -1,0 +1,16 @@
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineService.Domain.AssemblyInfoInputs.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineService.Domain.AssemblyInfo.cs
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineService.Domain.sourcelink.json
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\bin\Debug\net8.0\EngineService.Domain.deps.json
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\bin\Debug\net8.0\EngineService.Domain.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\bin\Debug\net8.0\EngineService.Domain.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\bin\Debug\net8.0\SharedCore.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\bin\Debug\net8.0\SharedCore.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineService.Domain.csproj.AssemblyReference.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineSe.6321177D.Up2Date
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineService.Domain.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\refint\EngineService.Domain.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\EngineService.Domain.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\EngineService.Domain\obj\Debug\net8.0\ref\EngineService.Domain.dll

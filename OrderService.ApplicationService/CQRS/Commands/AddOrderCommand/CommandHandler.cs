@@ -26,9 +26,9 @@ public class CommandHandler(
             
             logger.LogInformation("Checking existing inventory in Warehouse for Order {ID}", orderId);
 
-            InventoryResponseDto? responseDto = await warehouseClient.GetStockItems();
+            List<StockItemDto>? responseDto = await warehouseClient.GetStockItems();
 
-            if (responseDto != null && responseDto.StockItems!.Any())
+            if (responseDto != null && responseDto.Any())
             {
                 shortageItems = GetShortageItems(request.OrderItems, responseDto);
             }
@@ -65,22 +65,23 @@ public class CommandHandler(
     #region Private methods
 
     private List<ShortageItem> GetShortageItems(IEnumerable<Domain.Entities.OrderItem> requestOrderItems,
-        InventoryResponseDto responseDto)
+        List<StockItemDto> responseDto)
     {
         var shortageItems = new List<ShortageItem>();
 
         foreach (var orderItem in requestOrderItems)
         {
             var stockItem =
-                responseDto.StockItems!.FirstOrDefault(item => item.ProductId == orderItem.ProductId.ToString());
+                responseDto.FirstOrDefault(item => item.ProductId == orderItem.ProductId.ToString());
             if (stockItem != null && stockItem.AvailableQuantity >= orderItem.Quantity) continue;
 
             logger.LogInformation("Shortage detected for product ID: {ProductId}", orderItem.ProductId);
 
-            shortageItems.Add(new ShortageItem()
+            shortageItems.Add(new ShortageItem
             {
                 ProductId = orderItem.ProductId,
-                RequiredQuantity = orderItem.Quantity - stockItem!.AvailableQuantity
+                RequiredQuantity = orderItem.Quantity - stockItem!.AvailableQuantity,
+                Type = stockItem.Type
             });
         }
 

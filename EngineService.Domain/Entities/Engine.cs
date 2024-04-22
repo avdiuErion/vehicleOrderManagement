@@ -4,5 +4,5 @@ namespace EngineService.Domain.Entities;
 
 public class Engine : BaseEntity
 {
-    public string Description {get; set;}
+    public string? Description {get; set;}
 }

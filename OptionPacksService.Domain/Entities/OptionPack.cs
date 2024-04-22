@@ -4,5 +4,5 @@ namespace OptionPacksService.Domain.Entities;
 
 public class OptionPack : BaseEntity
 {
-    public string Description {get; set;}
+    public string? Description {get; set;}
 }

@@ -1,0 +1,9 @@
+**/bin
+**/obj
+.vs
+.sln
+*.sln
+**/*.Development.*
+**/*.pubxml*
+**/*.csproj.user
+**/dotnet-tools.json

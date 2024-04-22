@@ -23,7 +23,7 @@ public class OrderCompleteEventConsumer(
         {
             orderId = context.Message.OrderId;
 
-            Order? order = await orderRepository.FirstOrDefaultAsync(x => x!.Id == orderId);
+            Order order = await orderRepository.FirstOrDefaultAsync(x => x!.Id == orderId);
 
             order.Status = OrderStatus.Completed;
 

@@ -1,0 +1,12 @@
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\bin\Debug\net8.0\ChassissService.DataAccess.deps.json
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\bin\Debug\net8.0\ChassissService.DataAccess.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\bin\Debug\net8.0\ChassissService.DataAccess.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\ChassissService.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\ChassissService.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\ChassissService.DataAccess.AssemblyInfo.cs
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\ChassissService.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\ChassissService.DataAccess.sourcelink.json
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\ChassissService.DataAccess.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\refint\ChassissService.DataAccess.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\ChassissService.DataAccess.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\ChassissService.DataAccess\obj\Debug\net8.0\ref\ChassissService.DataAccess.dll

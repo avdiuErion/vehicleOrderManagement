@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>aspnet-NotificationService-3250F5C8-BF3C-47FB-A81C-98C33298C7E5</UserSecretsId>
         <RootNamespace>NotificationService</RootNamespace>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,6 +20,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\NotificationService.ApplicationService\NotificationService.ApplicationService.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
     </ItemGroup>
 
 </Project>

@@ -1,0 +1,16 @@
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\bin\Debug\net8.0\OptionPacksService.Domain.deps.json
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\bin\Debug\net8.0\OptionPacksService.Domain.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\bin\Debug\net8.0\OptionPacksService.Domain.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPacksService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPacksService.Domain.AssemblyInfoInputs.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPacksService.Domain.AssemblyInfo.cs
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPacksService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPacksService.Domain.sourcelink.json
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPacksService.Domain.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\refint\OptionPacksService.Domain.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPacksService.Domain.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\ref\OptionPacksService.Domain.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\bin\Debug\net8.0\SharedCore.dll
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\bin\Debug\net8.0\SharedCore.pdb
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPacksService.Domain.csproj.AssemblyReference.cache
+C:\Users\Erion-avdiu\source\repos\vehicleOrderManagement\OptionPacksService.Domain\obj\Debug\net8.0\OptionPa.52077B18.Up2Date

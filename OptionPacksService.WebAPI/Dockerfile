@@ -8,6 +8,10 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["OptionPacksService.WebAPI/OptionPacksService.WebAPI.csproj", "OptionPacksService.WebAPI/"]
+COPY ["SharedCore/SharedCore.csproj", "SharedCore/"]
+COPY ["OptionPacksService.ApplicationService/OptionPacksService.ApplicationService.csproj", "OptionPacksService.ApplicationService/"]
+COPY ["OptionPacksService.DataAccess/OptionPacksService.DataAccess.csproj", "OptionPacksService.DataAccess/"]
+COPY ["OptionPacksService.Domain/OptionPacksService.Domain.csproj", "OptionPacksService.Domain/"]
 RUN dotnet restore "OptionPacksService.WebAPI/OptionPacksService.WebAPI.csproj"
 COPY . .
 WORKDIR "/src/OptionPacksService.WebAPI"
